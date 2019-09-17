@@ -47,5 +47,27 @@ namespace VectorMath
             this.Y = y;
             this.Z = z;
         }
+
+        /// <summary>
+        /// This method adds two vectors.
+        /// </summary>
+        /// <param name="other"></param>
+        public void Add(Vector3 other)
+        {
+            this.X += other.X;
+            this.Y += other.Y;
+            this.Z += other.Z;
+
+        }
+
+        /// <summary>
+        /// This method returns the dot product of two vectors.
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        public double DotProduct(Vector3 other)
+        {
+            return this.X * other.X + this.Y * other.Y + this.Z * other.Z;
+        }
     }
 }
